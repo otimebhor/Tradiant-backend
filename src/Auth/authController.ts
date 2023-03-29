@@ -77,4 +77,22 @@ export const registerUser = async(req, res) =>{
     token,
   });
 
-}
+};
+
+// export const userLogin = async(req, res) => {
+//   const { email, password } = req.body;
+
+//   if ( !email && !password ) {
+//     return res.status(404).json({
+//         status: "fail",
+//         msg: "please enter the necessary fields",
+//       });
+//     }
+
+//   //check for user in database
+//   const user = await UserModel.findOne({
+//     where : {
+//       email
+//     }
+//   })
+
