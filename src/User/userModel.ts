@@ -1,9 +1,8 @@
 import Sequelize, { Model } from "sequelize";
 import { DB } from "../db/database";
 
-
 export class UserModel extends Model {
-    id: any;
+
 }
 UserModel.init(
   {
@@ -66,8 +65,7 @@ UserModel.init(
   }
 );
 
-
 UserModel.sync({ alter: true }).then(() => {
-    console.log("User table migrated");
-    // Table created
-  });
+  console.log("User table migrated");
+  // Table created
+});
